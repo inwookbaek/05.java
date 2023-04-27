@@ -55,28 +55,5 @@ public class TimeMain1 {
 			System.out.println("동일한 시간입니다.");
 		}
 		System.out.println("시간차이(nano) : " + instant1.until(instant2, ChronoUnit.NANOS));
-		
-
 	}
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
