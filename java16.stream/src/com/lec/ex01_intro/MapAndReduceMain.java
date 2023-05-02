@@ -41,12 +41,11 @@ public class MapAndReduceMain {
 				  .mapToInt(Student :: getScore)
 				  .sum();
 		System.out.println("학생들의 총점 = " + sum);
+		System.out.println();
 		
 		// 3. 학생인원?
 		//    중간처리 mapToInt() -> count()
-		long count = list.stream()
-						 .mapToInt(Student :: getScore)
-						 .count();
+		long count = list.stream().mapToInt(Student :: getScore).count();
 		System.out.println("학생 인원수 = " + count);
 	}
 

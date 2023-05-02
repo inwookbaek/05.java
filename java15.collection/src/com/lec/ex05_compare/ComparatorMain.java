@@ -9,6 +9,12 @@ public class ComparatorMain {
 	public static void main(String[] args) {
 		
 		TreeSet<Student> ts = new TreeSet<>(new StudentComparator());
+		TreeSet<Student> ts1 = new TreeSet<>(new Comparator<Student>() {
+			@Override
+			public int compare(Student o1, Student o2) {
+				return 0;
+			}
+		});
 		ts.add(new Student("홍길동", 1000));
 		ts.add(new Student("손흥민", 31));
 		ts.add(new Student("이강인", 22));
